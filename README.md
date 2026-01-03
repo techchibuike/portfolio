@@ -27,7 +27,7 @@ A clean, elegant portfolio template built with Next.js 14 and Tailwind CSS. Desi
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/techChibuike/portfolio.git
 cd portfolio
 
 # Install dependencies
