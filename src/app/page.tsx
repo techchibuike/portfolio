@@ -249,7 +249,7 @@ export default function Home() {
     } else {
       // Check system preference
       const prefersDark = window.matchMedia(
-        "(prefers-color-scheme: dark)"
+        "(prefers-color-scheme: dark)",
       ).matches;
       setIsDark(prefersDark);
     }
@@ -275,7 +275,7 @@ export default function Home() {
           }
         });
       },
-      { threshold: 0.3, rootMargin: "-50px 0px -50px 0px" }
+      { threshold: 0.3, rootMargin: "-50px 0px -50px 0px" },
     );
 
     // Initialize refs array
@@ -587,8 +587,8 @@ export default function Home() {
                     {index === 0
                       ? "Solutions"
                       : index === 1
-                      ? "Development"
-                      : "Products"}
+                        ? "Development"
+                        : "Products"}
                   </div>
                   <div className="text-sm sm:text-base font-medium mb-1 sm:mb-2">
                     {door.title}
@@ -596,7 +596,7 @@ export default function Home() {
                   <div className="text-xs sm:text-sm text-muted-foreground">
                     {door.description.substring(
                       0,
-                      window.innerWidth < 640 ? 60 : 80
+                      window.innerWidth < 640 ? 60 : 80,
                     )}
                     ...
                   </div>
@@ -626,14 +626,17 @@ export default function Home() {
               {PROJECTS.map((project) => (
                 <div
                   key={project.id}
-                  className={`group py-4 sm:py-6 border-b transition-colors duration-500 cursor-pointer ${
+                  className={`group py-4 sm:py-6 border-b transition-colors duration-500 ${
                     expandedProject === project.id
                       ? "border-foreground/30"
                       : "border-border/50 hover:border-border"
                   }`}
-                  onClick={() => toggleProject(project.id)}
                 >
-                  <div className="flex flex-col lg:grid lg:grid-cols-12 gap-3 sm:gap-4">
+                  {/* Main content - always visible */}
+                  <div
+                    className="flex flex-col lg:grid lg:grid-cols-12 gap-3 sm:gap-4 cursor-pointer"
+                    onClick={() => toggleProject(project.id)}
+                  >
                     <div className="lg:col-span-2">
                       <div className="text-base sm:text-lg md:text-xl font-light text-muted-foreground">
                         {project.year}
@@ -663,7 +666,59 @@ export default function Home() {
                     </div>
                   </div>
 
-                  {/* EXPANDED CONTENT - Depth on demand */}
+                  {/* Links section - ALWAYS VISIBLE, outside the click handler */}
+                  <div className="mt-3 flex gap-3 sm:gap-4 text-xs sm:text-sm">
+                    {project.demo && (
+                      <a
+                        href={project.demo}
+                        className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-ring rounded group/link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <span>Live demo</span>
+                        <svg
+                          className="w-3 h-3 transform group-hover/link:translate-x-0.5 transition-transform"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
+                        </svg>
+                      </a>
+                    )}
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-ring rounded group/link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <span>View code</span>
+                        <svg
+                          className="w-3 h-3 transform group-hover/link:translate-x-0.5 transition-transform"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
+                        </svg>
+                      </a>
+                    )}
+                  </div>
+
+                  {/* EXPANDED CONTENT - Additional details */}
                   {expandedProject === project.id && (
                     <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-border/30 space-y-3 sm:space-y-4 animate-fade-in-up">
                       <div>
@@ -673,30 +728,6 @@ export default function Home() {
                         <p className="text-sm sm:text-base text-foreground">
                           {project.results}
                         </p>
-                      </div>
-                      <div className="flex gap-3 sm:gap-4 text-xs sm:text-sm">
-                        {project.demo && (
-                          <a
-                            href={project.demo}
-                            className="text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-ring rounded"
-                            onClick={(e) => e.stopPropagation()}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            Live demo →
-                          </a>
-                        )}
-                        {project.github && (
-                          <a
-                            href={project.github}
-                            className="text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-ring rounded"
-                            onClick={(e) => e.stopPropagation()}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            View code →
-                          </a>
-                        )}
                       </div>
                     </div>
                   )}
