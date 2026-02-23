@@ -6,6 +6,7 @@ import Link from "next/link";
 const SECTIONS = [
   { id: "intro", label: "Intro" },
   { id: "experience", label: "Experience" },
+  { id: "process", label: "Process" },
   { id: "work", label: "Work" },
   { id: "projects", label: "Projects" },
   { id: "connect", label: "Connect" },
@@ -21,10 +22,10 @@ const EXPERIENCE = [
   },
   {
     year: "Feb 2025 — Present",
-    role: "Project Lead & Founder",
-    company: "Alphoch",
+    role: "Founder & Lead Developer",
+    company: "Alphoch Venture Studio",
     description:
-      "Building ideas and developing people through innovative projects. Currently developing KOORDI - an event planning platform while establishing sustainable team structures and product culture.",
+      "Building and scaling venture studio focused on healthcare efficiency and innovative products. Developed Alphoch Health, ClinicFlow Pro demo, and discovery call systems. Currently establishing sustainable product culture and team structures.",
   },
   {
     year: "2024 — Present",
@@ -77,7 +78,7 @@ const WORK_DOORS = [
   {
     title: "Product Building",
     description:
-      "Creating scalable solutions from idea to launch. Currently building KOORDI for the event planning industry.",
+      "Creating scalable solutions from idea to launch. Currently building KOORDI for the event planning industry and healthcare systems at Alphoch.",
     services: [
       "Product Strategy & Validation",
       "MVP Development",
@@ -92,49 +93,73 @@ const PROJECTS = [
   {
     id: 1,
     year: "2025",
-    name: "MobDoc'r Healthcare Platform",
+    name: "Alphoch Venture Studio Platform",
     description:
-      "Complete healthcare technology platform connecting users with HMO plans through integrated dashboards.",
-    tech: ["NestJS", "React", "PostgreSQL", "TypeScript", "Tailwind"],
+      "Built the main venture studio website positioning Alphoch as a founder-led studio solving healthcare efficiency and building tomorrow's innovations.",
+    tech: ["Next.js", "React", "Tailwind", "Vercel"],
     results:
-      "Built MVP with three distinct dashboards (admin, HMO, users). Implemented core product logic and monolithic architecture serving thousands of potential users in healthcare sector.",
-    demo: "https://mobdocr.com",
+      "Established clear brand presence for venture studio model. Structured content around problem-first approach, revenue validation, and portfolio strategy. Created gateway to health.alphoch.com and booking systems.",
+    demo: "https://alphoch.com",
     github: null,
   },
   {
     id: 2,
     year: "2025",
-    name: "KOORDI - Event Planning Platform",
+    name: "Alphoch Health - Clinic Efficiency System",
     description:
-      "Platform connecting event planners with vendors. Currently in waitlist stage with validated user research.",
-    tech: ["Next.js", "Node.js", "PostgreSQL", "Tailwind", "Prisma"],
+      "Built healthcare efficiency platform targeting Nigerian clinics losing revenue to appointment chaos and manual booking systems.",
+    tech: ["Next.js", "Node.js", "PostgreSQL", "Tailwind"],
     results:
-      "Conducted user research with event vendors. Built waitlist platform achieving mobile responsiveness. Preparing for launch with validated problem-solution fit.",
-    demo: "https://koordi.ng",
+      "Created digital solution that pays for itself in 10 days. Features online booking, SMS reminders, and patient portal integration. Currently live and operational.",
+    demo: "https://health.alphoch.com",
     github: null,
   },
   {
     id: 3,
-    year: "2024-2025",
-    name: "Performance Optimization Projects",
+    year: "2025",
+    name: "ClinicFlow Pro - Demo Application",
     description:
-      "Multiple client projects focused on mobile performance and conversion optimization.",
-    tech: ["Performance", "SEO", "Analytics", "CRO", "Automation"],
+      "Built functional demo application showcasing clinic management solution capabilities for prospective clients.",
+    tech: ["React", "Node.js", "Express", "MongoDB"],
     results:
-      "Average improvement: 40-60% mobile conversion increase. Reduced load times from 5s+ to 1.2s. Implemented analytics for data-driven decisions across 5+ projects.",
-    demo: null,
+      "Interactive demonstration of appointment scheduling, patient management, and clinic workflow automation. Used for client presentations and discovery calls.",
+    demo: "https://clinicflow-pro.alphoch.com",
     github: null,
   },
   {
     id: 4,
-    year: "2024",
-    name: "Tourism Discovery App",
+    year: "2025",
+    name: "Discovery Call Scheduling System",
     description:
-      "Geolocation application helping tourists discover businesses and attractions in new environments.",
-    tech: ["React", "Map APIs", "Node.js", "MongoDB", "Express"],
+      "Developed streamlined booking interface for potential clients to schedule discovery calls directly.",
+    tech: ["Next.js", "Calendar API", "Tailwind"],
     results:
-      "Built responsive mapping interface. Implemented business discovery features. Contributed to team development workflow and deployment processes.",
-    demo: null,
+      "Simplified client onboarding with automated scheduling. Integrated with calendar systems for seamless discovery call booking.",
+    demo: "https://alphoch.com/book-call",
+    github: null,
+  },
+  {
+    id: 5,
+    year: "2025",
+    name: "Mountain Crest School Website",
+    description:
+      "Designed and developed full school website with structured content architecture and administrative information system.",
+    tech: ["Next.js", "Tailwind", "CMS Integration"],
+    results:
+      "Created responsive school portal with parent information system. Currently upgrading performance and UX for better accessibility.",
+    demo: "http://mountaincrest.sch.ng",
+    github: null,
+  },
+  {
+    id: 6,
+    year: "2024-2025",
+    name: "KOORDI - Event Planning Platform",
+    description:
+      "Built event planning platform connecting planners with vendors. Currently in validation stage with user research completed.",
+    tech: ["Next.js", "Node.js", "PostgreSQL", "Tailwind", "Prisma"],
+    results:
+      "Conducted user research with event vendors. Built waitlist platform with mobile responsiveness. Preparing for launch with validated problem-solution fit.",
+    demo: "https://koordi.ng",
     github: null,
   },
 ];
@@ -399,57 +424,62 @@ export default function Home() {
             <div className="space-y-4 sm:space-y-6">
               <div className="space-y-2 sm:space-y-3">
                 <div className="text-xs sm:text-sm text-muted-foreground font-mono tracking-wider">
-                  PORTFOLIO / {new Date().getFullYear()}
+                  SOFTWARE ENGINEER / {new Date().getFullYear()}
                 </div>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight">
                   Chibuike Okpala
                   <br />
                   <span className="text-muted-foreground text-xl sm:text-2xl md:text-3xl lg:text-4xl">
-                    Full-Stack Developer
+                    Product-Focused Web Developer
                   </span>
                 </h1>
               </div>
 
               <div className="space-y-4 sm:space-y-6 max-w-lg">
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                  Building solutions through{" "}
-                  <span className="text-foreground">development</span>,{" "}
-                  <span className="text-foreground">problem-solving</span>, and{" "}
-                  <span className="text-foreground">product thinking</span>.
+                  I build high-converting websites and functional web
+                  applications for service businesses and startups. Focused on
+                  clean execution and real usability.
                 </p>
 
-                <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
-                  <div className="flex items-center gap-2">
+                <div className="flex items-center gap-4">
+                  <Link
+                    href="#connect"
+                    className="px-4 py-2 bg-foreground text-background rounded-lg text-sm hover:opacity-90 transition-opacity"
+                  >
+                    Work With Me
+                  </Link>
+                  <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
                     <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-green-500 rounded-full animate-pulse"></div>
                     Available for projects
                   </div>
                 </div>
               </div>
 
-              {/* THREE METRICS - Proof */}
+              {/* METRICS - Proof */}
               <div className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 pt-6 sm:pt-12 border-t border-border/30">
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl font-light text-foreground">
-                    5+
+                    6+
                   </div>
                   <div className="text-xs sm:text-sm text-muted-foreground mt-1">
-                    Projects completed
+                    Live projects deployed
                   </div>
                 </div>
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl font-light text-foreground">
-                    85%
+                    10-day
                   </div>
                   <div className="text-xs sm:text-sm text-muted-foreground mt-1">
-                    Avg. performance gain
+                    ROI for clinic system
                   </div>
                 </div>
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl font-light text-foreground">
-                    40-60%
+                    100%
                   </div>
                   <div className="text-xs sm:text-sm text-muted-foreground mt-1">
-                    Avg. conversion lift
+                    Client project delivery
                   </div>
                 </div>
               </div>
@@ -512,9 +542,62 @@ export default function Home() {
                 Currently
               </div>
               <p className="text-sm sm:text-base text-foreground">
-                Building KOORDI (event planning platform) while consulting on
-                technical problems and leading development at MobDoc'r.
+                Building healthcare efficiency systems at Alphoch Health while
+                consulting on technical problems and leading development at
+                MobDoc'r.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* PROCESS */}
+        <section
+          id="process"
+          ref={setSectionRef(2)}
+          className="py-12 sm:py-20 animate-fade-in-up"
+        >
+          <div className="space-y-8 sm:space-y-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-light">
+              My Approach
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+              {[
+                {
+                  step: "01",
+                  title: "Understand",
+                  desc: "Business objective & user needs",
+                },
+                {
+                  step: "02",
+                  title: "Define",
+                  desc: "Clear user flows & requirements",
+                },
+                {
+                  step: "03",
+                  title: "Build",
+                  desc: "Functional structure & MVP",
+                },
+                {
+                  step: "04",
+                  title: "Iterate",
+                  desc: "Feedback & improvements",
+                },
+                { step: "05", title: "Deploy", desc: "Launch & optimize" },
+              ].map((item) => (
+                <div
+                  key={item.step}
+                  className="p-4 border border-border/50 rounded-lg"
+                >
+                  <div className="text-xs text-muted-foreground font-mono mb-2">
+                    {item.step}
+                  </div>
+                  <div className="font-medium mb-1">{item.title}</div>
+                  <div className="text-xs text-muted-foreground">
+                    {item.desc}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -522,13 +605,13 @@ export default function Home() {
         {/* WORK (3 Doors) */}
         <section
           id="work"
-          ref={setSectionRef(2)}
+          ref={setSectionRef(3)}
           className="min-h-screen py-12 sm:py-20 md:py-32 animate-fade-in-up"
         >
           <div className="space-y-8 sm:space-y-12">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-light">
-                Approach
+                Service Areas
               </h2>
               <div className="text-xs sm:text-sm text-muted-foreground font-mono">
                 Three ways I work
@@ -596,7 +679,9 @@ export default function Home() {
                   <div className="text-xs sm:text-sm text-muted-foreground">
                     {door.description.substring(
                       0,
-                      window.innerWidth < 640 ? 60 : 80,
+                      typeof window !== "undefined" && window.innerWidth < 640
+                        ? 60
+                        : 80,
                     )}
                     ...
                   </div>
@@ -609,7 +694,7 @@ export default function Home() {
         {/* PROJECTS */}
         <section
           id="projects"
-          ref={setSectionRef(3)}
+          ref={setSectionRef(4)}
           className="min-h-screen py-12 sm:py-20 md:py-32 animate-fade-in-up"
         >
           <div className="space-y-8 sm:space-y-12">
@@ -666,7 +751,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  {/* Links section - ALWAYS VISIBLE, outside the click handler */}
+                  {/* Links section - ALWAYS VISIBLE */}
                   <div className="mt-3 flex gap-3 sm:gap-4 text-xs sm:text-sm">
                     {project.demo && (
                       <a
@@ -741,9 +826,9 @@ export default function Home() {
                 Result from Client Projects
               </div>
               <p className="text-sm sm:text-base text-foreground">
-                Consistently reduce mobile load times from 5s+ to 1.2s,
-                increasing conversions by 40-60% across multiple client
-                projects.
+                Consistently deliver functional MVPs and business websites that
+                solve real operational problems, with healthcare systems showing
+                10-day ROI for clinics.
               </p>
             </div>
           </div>
@@ -752,7 +837,7 @@ export default function Home() {
         {/* CONNECT */}
         <section
           id="connect"
-          ref={setSectionRef(4)}
+          ref={setSectionRef(5)}
           className="py-12 sm:py-20 md:py-32 animate-fade-in-up"
         >
           <div className="space-y-6 sm:space-y-8">
@@ -762,8 +847,8 @@ export default function Home() {
 
             <div className="space-y-4 sm:space-y-6">
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                Interested in collaboration or discussion about technology and
-                problem-solving.
+                Interested in collaboration or discussion about web development
+                and product building.
               </p>
 
               <div className="space-y-3 sm:space-y-4">
