@@ -93,6 +93,19 @@ const PROJECTS = [
   {
     id: 1,
     year: "2025",
+    name: "NextGen Titan - Wix Development Agency",
+    description:
+      "Built complete agency website for Wix development company. Custom design with premium dark theme, process visualization, and conversion-focused layout.",
+    tech: ["HTML", "Tailwind CSS", "Custom Design", "Performance Optimized"],
+    results:
+      "Designed and developed agency site with 6-step process, testimonial sections, and strategic CTAs. Built for lead generation and client trust. Launching Q1 2025.",
+    demo: "https://nextgentitan.com",
+    github: null,
+    status: "live",
+  },
+  {
+    id: 2,
+    year: "2025",
     name: "Alphoch Venture Studio Platform",
     description:
       "Built the main venture studio website positioning Alphoch as a founder-led studio solving healthcare efficiency and building tomorrow's innovations.",
@@ -101,9 +114,10 @@ const PROJECTS = [
       "Established clear brand presence for venture studio model. Structured content around problem-first approach, revenue validation, and portfolio strategy. Created gateway to health.alphoch.com and booking systems.",
     demo: "https://alphoch.com",
     github: null,
+    status: "live",
   },
   {
-    id: 2,
+    id: 3,
     year: "2025",
     name: "Alphoch Health - Clinic Efficiency System",
     description:
@@ -113,9 +127,10 @@ const PROJECTS = [
       "Created digital solution that pays for itself in 10 days. Features online booking, SMS reminders, and patient portal integration. Currently live and operational.",
     demo: "https://health.alphoch.com",
     github: null,
+    status: "live",
   },
   {
-    id: 3,
+    id: 4,
     year: "2025",
     name: "ClinicFlow Pro - Demo Application",
     description:
@@ -125,9 +140,10 @@ const PROJECTS = [
       "Interactive demonstration of appointment scheduling, patient management, and clinic workflow automation. Used for client presentations and discovery calls.",
     demo: "https://clinicflow-pro.alphoch.com",
     github: null,
+    status: "live",
   },
   {
-    id: 4,
+    id: 5,
     year: "2025",
     name: "Discovery Call Scheduling System",
     description:
@@ -137,9 +153,10 @@ const PROJECTS = [
       "Simplified client onboarding with automated scheduling. Integrated with calendar systems for seamless discovery call booking.",
     demo: "https://alphoch.com/book-call",
     github: null,
+    status: "live",
   },
   {
-    id: 5,
+    id: 6,
     year: "2025",
     name: "Mountain Crest School Website",
     description:
@@ -149,18 +166,20 @@ const PROJECTS = [
       "Created responsive school portal with parent information system. Currently upgrading performance and UX for better accessibility.",
     demo: "http://mountaincrest.sch.ng",
     github: null,
+    status: "live",
   },
   {
-    id: 6,
+    id: 7,
     year: "2024-2025",
     name: "KOORDI - Event Planning Platform",
     description:
-      "Built event planning platform connecting planners with vendors. Currently in validation stage with user research completed.",
+      "Building event planning platform connecting planners with vendors. Currently in development with validated user research completed.",
     tech: ["Next.js", "Node.js", "PostgreSQL", "Tailwind", "Prisma"],
     results:
       "Conducted user research with event vendors. Built waitlist platform with mobile responsiveness. Preparing for launch with validated problem-solution fit.",
-    demo: "https://koordi.ng",
+    demo: null,
     github: null,
+    status: "development",
   },
 ];
 
@@ -460,7 +479,7 @@ export default function Home() {
               <div className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 pt-6 sm:pt-12 border-t border-border/30">
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl font-light text-foreground">
-                    6+
+                    7+
                   </div>
                   <div className="text-xs sm:text-sm text-muted-foreground mt-1">
                     Live projects deployed
@@ -739,6 +758,17 @@ export default function Home() {
 
                     <div className="lg:col-span-4 pt-2 sm:pt-0">
                       <div className="flex flex-wrap gap-1.5 sm:gap-2">
+                        {/* Status badge */}
+                        {project.status === "development" && (
+                          <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 text-xs bg-amber-500/10 text-amber-500 border border-amber-500/30 rounded">
+                            In Development
+                          </span>
+                        )}
+                        {project.status === "live" && (
+                          <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 text-xs bg-green-500/10 text-green-500 border border-green-500/30 rounded">
+                            Live
+                          </span>
+                        )}
                         {project.tech.map((tech) => (
                           <span
                             key={tech}
@@ -753,7 +783,7 @@ export default function Home() {
 
                   {/* Links section - ALWAYS VISIBLE */}
                   <div className="mt-3 flex gap-3 sm:gap-4 text-xs sm:text-sm">
-                    {project.demo && (
+                    {project.demo ? (
                       <a
                         href={project.demo}
                         className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-ring rounded group/link"
@@ -776,6 +806,13 @@ export default function Home() {
                           />
                         </svg>
                       </a>
+                    ) : (
+                      project.status === "development" && (
+                        <span className="inline-flex items-center gap-1 text-amber-500">
+                          <span>Coming soon</span>
+                          <span className="w-1.5 h-1.5 bg-amber-500 rounded-full animate-pulse"></span>
+                        </span>
+                      )
                     )}
                     {project.github && (
                       <a
