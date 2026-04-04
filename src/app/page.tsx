@@ -290,7 +290,7 @@ export default function Home() {
   const [isMounted, setIsMounted] = useState(false);
   const [isDark, setIsDark] = useState(true);
   const [activeSection, setActiveSection] = useState("intro");
-  const [activeDoor, setActiveDoor] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [expandedProject, setExpandedProject] = useState<number | null>(null);
   const sectionsRef = useRef<(HTMLElement | null)[]>([]);
 
@@ -349,37 +349,93 @@ export default function Home() {
   };
 
   const MobileNav = () => {
-    const activeIndex = SECTIONS.findIndex((s) => s.id === activeSection);
-
     return (
-      <nav className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 lg:hidden w-[95%] max-w-md pointer-events-none">
-        <div className="bg-background/80 backdrop-blur-xl border border-border/40 rounded-2xl p-1.5 shadow-2xl flex items-center justify-between relative pointer-events-auto">
-          {/* Active Highlight Pill */}
-          <div
-            className="absolute h-[calc(100%-12px)] bg-foreground rounded-xl transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] shadow-sm"
-            style={{
-              width: `calc(${100 / SECTIONS.length}% - 12px)`,
-              left: `calc(${(activeIndex * 100) / SECTIONS.length}% + 6px)`,
-            }}
-          />
+      <>
+        {/* Floating Trigger Button */}
+        <nav className="fixed bottom-6 right-6 z-[60] lg:hidden">
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="flex items-center gap-2 px-5 py-3 bg-foreground text-background rounded-full shadow-2xl transition-all duration-300 active:scale-90 hover:scale-105 font-mono text-xs uppercase tracking-widest border border-background/20"
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
+          >
+            <span>{isMenuOpen ? "Close" : "Menu"}</span>
+            <div className={`w-1.5 h-1.5 rounded-full transition-all duration-500 ${isMenuOpen ? "bg-red-500 animate-pulse" : "bg-green-500"}`} />
+          </button>
+        </nav>
 
-          {SECTIONS.map((section, idx) => (
-            <button
-              key={section.id}
-              onClick={() => scrollToSection(section.id)}
-              className={`relative z-10 flex-1 py-2 text-[10px] font-medium tracking-tight uppercase transition-all duration-300 active:scale-90 select-none ${
-                activeSection === section.id
-                  ? "text-background"
-                  : "text-muted-foreground hover:text-foreground/80"
-              }`}
-              aria-label={`Navigate to ${section.label}`}
-              aria-current={activeSection === section.id ? "page" : undefined}
-            >
-              {section.label}
-            </button>
-          ))}
+        {/* Backdrop */}
+        <div
+          onClick={() => setIsMenuOpen(false)}
+          className={`fixed inset-0 bg-background/20 backdrop-blur-sm z-[50] lg:hidden transition-all duration-500 ${
+            isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          }`}
+        />
+
+        {/* Half-height Bottom Sheet */}
+        <div
+          id="mobile-menu"
+          className={`fixed bottom-0 left-0 right-0 z-[55] lg:hidden bg-background/95 backdrop-blur-2xl border-t border-border/50 rounded-t-[2.5rem] p-8 shadow-2xl transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] ${
+            isMenuOpen ? "translate-y-0" : "translate-y-full"
+          } max-h-[70vh] overflow-y-auto`}
+        >
+          <div className="w-12 h-1.5 bg-muted-foreground/20 rounded-full mx-auto mb-8" />
+          
+          <div className="space-y-12">
+            {/* Sections */}
+            <div className="grid grid-cols-2 gap-4">
+              {SECTIONS.map((section) => (
+                <button
+                  key={section.id}
+                  onClick={() => {
+                    scrollToSection(section.id);
+                    setIsMenuOpen(false);
+                  }}
+                  className={`px-4 py-4 rounded-2xl text-sm font-medium transition-all duration-300 flex items-center justify-between group ${
+                    activeSection === section.id
+                      ? "bg-foreground text-background"
+                      : "bg-muted/30 text-muted-foreground hover:bg-muted/50"
+                  }`}
+                >
+                  <span>{section.label}</span>
+                  <div className={`w-1 h-1 rounded-full bg-current transition-transform duration-500 ${activeSection === section.id ? "scale-150" : "scale-0"}`} />
+                </button>
+              ))}
+            </div>
+
+            {/* Quick Contact Emails */}
+            <div className="space-y-4">
+              <div className="text-[10px] text-muted-foreground uppercase tracking-widest font-mono mb-2">Connect Directly</div>
+              <div className="space-y-2">
+                <Link
+                  href="mailto:damianokpala111@gmail.com"
+                  className="flex items-center justify-between p-4 bg-muted/20 border border-border/40 rounded-2xl group transition-all duration-300 active:scale-[0.98]"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <span className="text-xs font-mono text-foreground truncate mr-2">damianokpala111@gmail.com</span>
+                  <div className="p-2 bg-foreground/5 rounded-lg group-hover:bg-foreground/10 transition-colors">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                </Link>
+                <Link
+                  href="mailto:tech-seo-okpala@next-gentitan.com"
+                  className="flex items-center justify-between p-4 bg-muted/20 border border-border/40 rounded-2xl group transition-all duration-300 active:scale-[0.98]"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <span className="text-xs font-mono text-foreground truncate mr-2">tech-seo-okpala@next-gentitan.com</span>
+                  <div className="p-2 bg-foreground/5 rounded-lg group-hover:bg-foreground/10 transition-colors">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
-      </nav>
+      </>
     );
   };
 
