@@ -348,25 +348,40 @@ export default function Home() {
     setExpandedProject(expandedProject === projectId ? null : projectId);
   };
 
-  const MobileNav = () => (
-    <nav className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 lg:hidden mx-1">
-      <div className="flex gap-1 bg-background/80 backdrop-blur-sm border border-border/50 rounded-full p-1 shadow-lg">
-        {SECTIONS.map((section) => (
-          <button
-            key={section.id}
-            onClick={() => scrollToSection(section.id)}
-            className={`px-3 py-1.5 text-xs rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background ${activeSection === section.id
-              ? "bg-foreground text-background font-medium"
-              : "text-muted-foreground hover:text-foreground"
+  const MobileNav = () => {
+    const activeIndex = SECTIONS.findIndex((s) => s.id === activeSection);
+
+    return (
+      <nav className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 lg:hidden w-[95%] max-w-md pointer-events-none">
+        <div className="bg-background/80 backdrop-blur-xl border border-border/40 rounded-2xl p-1.5 shadow-2xl flex items-center justify-between relative pointer-events-auto">
+          {/* Active Highlight Pill */}
+          <div
+            className="absolute h-[calc(100%-12px)] bg-foreground rounded-xl transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] shadow-sm"
+            style={{
+              width: `calc(${100 / SECTIONS.length}% - 12px)`,
+              left: `calc(${(activeIndex * 100) / SECTIONS.length}% + 6px)`,
+            }}
+          />
+
+          {SECTIONS.map((section, idx) => (
+            <button
+              key={section.id}
+              onClick={() => scrollToSection(section.id)}
+              className={`relative z-10 flex-1 py-2 text-[10px] font-medium tracking-tight uppercase transition-all duration-300 active:scale-90 select-none ${
+                activeSection === section.id
+                  ? "text-background"
+                  : "text-muted-foreground hover:text-foreground/80"
               }`}
-            aria-label={`Navigate to ${section.label}`}
-          >
-            {section.label}
-          </button>
-        ))}
-      </div>
-    </nav>
-  );
+              aria-label={`Navigate to ${section.label}`}
+              aria-current={activeSection === section.id ? "page" : undefined}
+            >
+              {section.label}
+            </button>
+          ))}
+        </div>
+      </nav>
+    );
+  };
 
   if (!isMounted) {
     return (
@@ -777,9 +792,29 @@ export default function Home() {
               <div className="space-y-3 sm:space-y-4">
                 <Link
                   href="mailto:damianokpala111@gmail.com"
-                  className="group flex items-center gap-2 sm:gap-3 text-sm sm:text-base text-foreground hover:text-muted-foreground transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background rounded"
+                  className="group flex items-center gap-2 sm:gap-3 text-sm sm:text-base text-foreground hover:text-muted-foreground transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background rounded w-fit"
                 >
                   <span>damianokpala111@gmail.com</span>
+                  <svg
+                    className="w-4 h-4 sm:w-5 sm:h-5 transform group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </Link>
+
+                <Link
+                  href="mailto:tech-seo-okpala@next-gentitan.com"
+                  className="group flex items-center gap-2 sm:gap-3 text-sm sm:text-base text-foreground hover:text-muted-foreground transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background rounded w-fit"
+                >
+                  <span>tech-seo-okpala@next-gentitan.com</span>
                   <svg
                     className="w-4 h-4 sm:w-5 sm:h-5 transform group-hover:translate-x-1 transition-transform duration-300"
                     fill="none"

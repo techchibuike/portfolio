@@ -14,6 +14,7 @@ export default function StructuredData() {
       "@type": "Organization",
       name: "MobDoc'r",
     },
+    email: ["damianokpala111@gmail.com", "tech-seo-okpala@next-gentitan.com"],
     description:
       "Outcomes First. Everything Else Follows. Full-stack builder and technical problem-solver focused on real results.",
     knowsAbout: [
