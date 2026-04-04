@@ -18,73 +18,67 @@ const EXPERIENCE = [
     role: "Full Stack Developer",
     company: "MobDoc'r (Healthcare MVP)",
     description:
-      "Leading development of a healthcare platform connecting users to HMO plans across Nigeria. Built admin, user, and HMO dashboards on a scalable NestJS backend. Driving core product logic and enrollment flow implementation.",
+      "Leading development of a healthcare platform connecting users to HMO plans. Built admin, user, and HMO dashboards on a scalable NestJS backend.",
   },
   {
     year: "2024 — Present",
     role: "Technical Builder & SEO Specialist",
     company: "Next-Gen Titan (Digital Agency)",
     description:
-      "Building and shipping client projects across industries — from high-converting service websites to SaaS platforms. Responsible for full-stack development, performance optimization, and SEO execution on multiple live projects with measurable results.",
+      "Building and shipping client projects across industries — from high-converting service websites to SaaS platforms. Focused on performance and SEO.",
   },
   {
     year: "Feb 2025 — Present",
     role: "Product Engineer",
     company: "Alphoch (Projects Lab)",
     description:
-      "Building web applications and MVPs to validate product ideas. Currently developing healthcare efficiency tools and an event planning platform.",
+      "Developing web applications and MVPs to validate product ideas. Currently building healthcare efficiency tools and event platforms.",
   },
   {
     year: "March 2025 — 2025",
     role: "Full Stack Developer",
     company: "Mountain Crest School",
     description:
-      "Designed and developed a complete school website with structured content architecture and an administrative information system — built on a foundation ready to scale into a full student portal.",
+      "Designed a complete school website and administrative information system — built to scale into a full student portal.",
   },
   {
     year: "Aug 2024 — Feb 2025",
     role: "Frontend Engineer",
     company: "Dafe Software",
     description:
-      "Built a geolocation-based tourism application helping travelers discover businesses and attractions in new environments. Focused on responsive UI and interactive mapping.",
+      "Built a geolocation-based tourism application with responsive UI and interactive mapping.",
   },
 ];
 
 const WORK_DOORS = [
   {
     title: "Turn Interest Into Action",
-    description:
-      "For coaches, consultants, and service professionals getting attention online but not converting it into consistent clients or bookings.",
+    description: "For professionals getting online attention but struggling to convert it into consistent clients.",
     services: [
-      "Clean site that presents your offer clearly",
-      "Intake form that qualifies leads before they reach you",
-      "Direct booking flow — no back-and-forth DMs",
-      "Performance optimization and analytics setup",
-      "SEO so the right people find you first",
+      "Landing pages focused on results",
+      "Lead qualification flows",
+      "Streamlined booking",
+      "Performance & SEO",
     ],
   },
   {
-    title: "Build Your Product Right the First Time",
-    description:
-      "For startups and founders who need a working MVP or full application — built to scale, not just to demo.",
+    title: "Build Your Product Right",
+    description: "For startups needing a working MVP or full-stack application built to scale from day one.",
     services: [
-      "Full-stack web applications",
-      "Dashboard and admin systems",
-      "API development and database design",
-      "Deployment and DevOps",
-      "SaaS architecture and product logic",
+      "Full-stack web apps",
+      "Admin & Dashboard systems",
+      "API & Database design",
+      "Deployment & DevOps",
     ],
   },
   {
-    title: "Fix What's Already Broken",
-    description:
-      "For businesses with an existing site or system that isn't performing — slow, unclear, or not converting.",
+    title: "Fix What's Broken",
+    description: "For businesses with an existing system that isn't performing — slow, unclear, or not converting.",
     services: [
-      "Performance and load time fixes",
-      "Conversion rate optimization",
-      "SEO and visibility setup",
-      "Lead capture and analytics integration",
-      "Mobile experience improvements",
+      "Performance & Load time",
+      "Conversion Optimization",
+      "Search visibility (SEO)",
+      "Mobile UX fixes",
     ],
   },
 ];
@@ -93,11 +87,11 @@ const PROJECTS = [
   {
     id: 1,
     year: "2024",
-    name: "Career Coach Experts — via Next-Gen Titan",
+    name: "Career Coach Experts",
     description:
-      "Built a high-ticket consultation funnel and global authority positioning system for a career coaching brand. Turned scattered online presence into a consistent, bookable pipeline of serious clients.",
-    tech: ["Professional Services", "Funnel", "SEO", "Authority Building"],
-    results: "320% increase in bookings · Global authority positioning",
+      "Built a consultation funnel and global authority positioning system for a career coaching brand.",
+    tech: ["Funnel", "SEO", "Authority"],
+    results: "320% increase in bookings",
     demo: "https://www.career-coach-experts.com/",
     github: null,
     type: "client",
@@ -105,11 +99,11 @@ const PROJECTS = [
   {
     id: 2,
     year: "2024",
-    name: "Better Body Massage — via Next-Gen Titan",
+    name: "Better Body Massage",
     description:
-      "Built a high-converting digital presence for a medical massage clinic in Florida. Designed around one goal: turning site visitors into booked appointments, with seamless booking integration and a clear service layout.",
-    tech: ["Healthcare", "Lead Generation", "Booking Flow"],
-    results: "200% increase in leads · Seamless booking integration",
+      "High-converting digital presence built to turn site visitors into booked appointments.",
+    tech: ["Healthcare", "Leads", "Booking"],
+    results: "200% increase in leads",
     demo: "https://betterbodymassage.com/",
     github: null,
     type: "client",
@@ -117,11 +111,11 @@ const PROJECTS = [
   {
     id: 3,
     year: "2024",
-    name: "The Botox Barn — via Next-Gen Titan",
+    name: "The Botox Barn",
     description:
-      "Premium aesthetic branding and local search dominance for an elite wellness clinic. Built to attract high-intent local clients through strong positioning and precise technical SEO execution.",
+      "Premium aesthetic branding and local search dominance for an elite wellness clinic.",
     tech: ["Healthcare", "Local SEO", "Branding"],
-    results: "250% lead growth · Local SEO dominance",
+    results: "250% lead growth",
     demo: "https://www.thebotoxbarn.com/",
     github: null,
     type: "client",
@@ -129,11 +123,11 @@ const PROJECTS = [
   {
     id: 4,
     year: "2024",
-    name: "Genova Appartamenti — via Next-Gen Titan",
+    name: "Genova Appartamenti",
     description:
-      "Streamlined direct booking platform for a top-rated vacation rental in Genoa. Designed to cut OTA dependency and move guests from discovery to confirmed booking.",
-    tech: ["Hospitality", "Direct Booking", "Mobile"],
-    results: "Direct booking pipeline · 100% mobile optimised",
+      "Direct booking platform designed to cut OTA dependency and streamline guest bookings.",
+    tech: ["Hospitality", "Booking", "Mobile"],
+    results: "Direct booking pipeline · 100% Mobile",
     demo: "https://lalucesugenovaappartamenti.com/",
     github: null,
     type: "client",
@@ -141,11 +135,11 @@ const PROJECTS = [
   {
     id: 5,
     year: "2024",
-    name: "Jake's Tree & Turf — via Next-Gen Titan",
+    name: "Jake's Tree & Turf",
     description:
-      "Comprehensive digital presence and local SEO strategy for a specialized landscaping and tree service in Maryland. Showcased 15+ years of expertise.",
-    tech: ["Local Business", "SEO", "Lead Generation"],
-    results: "15+ years of expertise showcased · 4 core service pillars",
+      "Digital presence and local SEO strategy for a landscape and tree service in Maryland.",
+    tech: ["SEO", "Lead Generation"],
+    results: "15+ years expertise showcased",
     demo: "https://www.jakestreeandturf.com",
     github: null,
     type: "client",
@@ -153,11 +147,11 @@ const PROJECTS = [
   {
     id: 6,
     year: "2024 — Present",
-    name: "MobDoc'r Healthcare Platform",
+    name: "MobDoc'r Health",
     description:
-      "Full-stack MVP connecting Nigerians to HMO health insurance plans through a streamlined 3-step enrollment flow. Built three integrated dashboards on a scalable architecture.",
+      "Full-stack MVP connecting Nigerians to HMO plans through a streamlined enrollment flow.",
     tech: ["SaaS", "Healthcare", "Full-Stack"],
-    results: "3-step enrollment flow · National scale architecture",
+    results: "3-step enrollment flow",
     demo: "https://mobdocr-two.vercel.app",
     github: null,
     type: "client",
@@ -167,9 +161,9 @@ const PROJECTS = [
     year: "2025",
     name: "ClinicFlow Pro",
     description:
-      "Specialized clinic management platform built to reduce admin workload and improve patient experience. Includes online booking, SMS reminders, patient portal, and automated workflow logic.",
-    tech: ["SaaS", "Healthcare", "Automation"],
-    results: "45% efficiency gain · Fully automated workflows",
+      "Clinic management platform with online booking, SMS reminders, and patient portal.",
+    tech: ["SaaS", "Automation"],
+    results: "45% efficiency gain",
     demo: "https://clinicflow-pro.alphoch.com",
     github: null,
     type: "client",
@@ -179,9 +173,9 @@ const PROJECTS = [
     year: "2025",
     name: "FGT Events",
     description:
-      "High-performance ticketing and event management platform engineered to handle massive simultaneous traffic without breaking. Built for scale from the ground up.",
+      "High-performance ticketing platform engineered to handle massive simultaneous traffic.",
     tech: ["SaaS", "Events", "High Concurrency"],
-    results: "50K+ tickets sold · High traffic ready",
+    results: "50K+ tickets sold",
     demo: "https://fgt.koordi.net",
     github: null,
     type: "client",
@@ -191,9 +185,9 @@ const PROJECTS = [
     year: "2025",
     name: "Mountain Crest School",
     description:
-      "Designed and built a complete school website with structured content architecture and an administrative information system — built as a foundation ready to grow into a full student portal.",
-    tech: ["Education", "Web Development", "CMS"],
-    results: "Scalable architecture · CMS integrated",
+      "Complete school website with structured architecture and administrative information system.",
+    tech: ["Education", "CMS"],
+    results: "Scalable arquitecture",
     demo: "http://mountaincrest.sch.ng",
     github: null,
     type: "client",
@@ -511,9 +505,7 @@ export default function Home() {
 
               <div className="space-y-4 sm:space-y-6 max-w-lg">
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                  Full-stack builder and technical problem-solver. Available for
-                  contract and freelance projects. Focused on real outcomes,
-                  clean execution, and measurable results.
+                  Full-stack builder focused on technical problem-solving and high-impact business results.
                 </p>
 
                 <div className="flex items-center gap-4">
@@ -639,24 +631,28 @@ export default function Home() {
                 {
                   step: "01",
                   title: "Diagnose",
-                  desc: "I study your situation first — your goals, your gaps, and what's actually holding things back.",
+                  desc: "Studying your situation first to identify real gaps.",
                 },
                 {
                   step: "02",
                   title: "Define",
-                  desc: "We agree on the exact outcome and scope before anything gets built.",
+                  desc: "Agreeing on the exact outcome before building.",
                 },
                 {
                   step: "03",
                   title: "Build",
-                  desc: "Clean, focused execution. No unnecessary complexity, no scope creep.",
+                  desc: "Clean execution without unnecessary complexity.",
                 },
                 {
                   step: "04",
                   title: "Refine",
-                  desc: "Feedback loop until it works exactly right — not just technically, but for your business.",
+                  desc: "Feedback loop until it works for your business.",
                 },
-                { step: "05", title: "Deliver", desc: "You get a working result with measurable impact, not just a finished file." },
+                {
+                  step: "05",
+                  title: "Deliver",
+                  desc: "Result with measurable impact.",
+                },
               ].map((item) => (
                 <div
                   key={item.step}
