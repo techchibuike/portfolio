@@ -14,77 +14,77 @@ const SECTIONS = [
 
 const EXPERIENCE = [
   {
-    year: "Sept 2025 — Jan 2026",
+    year: "2024 — Present",
     role: "Full Stack Developer",
     company: "MobDoc'r (Healthcare MVP)",
     description:
-      "Leading development of healthcare platform connecting users to HMO plans. Built admin, user, and HMO dashboards with monolithic NestJS backend architecture. Currently driving product logic implementation.",
+      "Leading development of a healthcare platform connecting users to HMO plans across Nigeria. Built admin, user, and HMO dashboards on a scalable NestJS backend. Driving core product logic and enrollment flow implementation.",
   },
   {
     year: "2024 — Present",
-    role: "Independent Developer",
-    company: "Client Projects",
+    role: "Technical Builder & SEO Specialist",
+    company: "Next-Gen Titan (Digital Agency)",
     description:
-      "Solving website problems across industries with measurable results. Specializing in performance optimization, SEO implementation, conversion rate optimization, and full-stack web applications.",
+      "Building and shipping client projects across industries — from high-converting service websites to SaaS platforms. Responsible for full-stack development, performance optimization, and SEO execution on multiple live projects with measurable results.",
   },
   {
     year: "Feb 2025 — Present",
     role: "Product Engineer",
     company: "Alphoch (Projects Lab)",
     description:
-      "Building web applications and MVPs to validate product ideas. Currently developing healthcare efficiency tools and event planning platforms.",
+      "Building web applications and MVPs to validate product ideas. Currently developing healthcare efficiency tools and an event planning platform.",
   },
   {
     year: "March 2025 — 2025",
     role: "Full Stack Developer",
     company: "Mountain Crest School",
     description:
-      "Developed company website and blog platforms. Architected scalable foundation for future school portal implementation.",
+      "Designed and developed a complete school website with structured content architecture and an administrative information system — built on a foundation ready to scale into a full student portal.",
   },
   {
     year: "Aug 2024 — Feb 2025",
     role: "Frontend Engineer",
     company: "Dafe Software",
     description:
-      "Built geolocation-based tourism application helping travelers discover businesses and attractions in new environments. Focused on responsive UI and interactive mapping features.",
+      "Built a geolocation-based tourism application helping travelers discover businesses and attractions in new environments. Focused on responsive UI and interactive mapping.",
   },
 ];
 
 const WORK_DOORS = [
   {
-    title: "Full-Stack Web Apps",
+    title: "Turn Interest Into Action",
     description:
-      "Building scalable applications with modern stacks for startups and service businesses.",
+      "For coaches, consultants, and service professionals getting attention online but not converting it into consistent clients or bookings.",
     services: [
-      "MVP Development",
-      "Dashboard & Admin Systems",
-      "API Development",
-      "Database Design",
-      "Deployment & DevOps",
+      "Clean site that presents your offer clearly",
+      "Intake form that qualifies leads before they reach you",
+      "Direct booking flow — no back-and-forth DMs",
+      "Performance optimization and analytics setup",
+      "SEO so the right people find you first",
     ],
   },
   {
-    title: "Business Websites",
+    title: "Build Your Product Right the First Time",
     description:
-      "Creating high-performance websites focused on clarity, credibility, and conversion.",
+      "For startups and founders who need a working MVP or full application — built to scale, not just to demo.",
     services: [
-      "Custom Design & Development",
-      "Performance Optimization",
-      "SEO Setup",
-      "Analytics Integration",
-      "Content Management",
+      "Full-stack web applications",
+      "Dashboard and admin systems",
+      "API development and database design",
+      "Deployment and DevOps",
+      "SaaS architecture and product logic",
     ],
   },
   {
-    title: "Technical Problem-Solving",
+    title: "Fix What's Already Broken",
     description:
-      "Fixing specific website issues with measurable results across performance, SEO, and user experience.",
+      "For businesses with an existing site or system that isn't performing — slow, unclear, or not converting.",
     services: [
-      "Mobile Performance Fixes",
-      "Conversion Optimization",
-      "Load Time Reduction",
-      "Analytics Setup",
-      "Lead Capture Systems",
+      "Performance and load time fixes",
+      "Conversion rate optimization",
+      "SEO and visibility setup",
+      "Lead capture and analytics integration",
+      "Mobile experience improvements",
     ],
   },
 ];
@@ -92,94 +92,111 @@ const WORK_DOORS = [
 const PROJECTS = [
   {
     id: 1,
-    year: "2025",
-    name: "NextGen Titan - Wix Development Agency",
+    year: "2024",
+    name: "Career Coach Experts — via Next-Gen Titan",
     description:
-      "Built complete agency website with custom dark theme, process visualization, and conversion-focused layout.",
-    tech: ["HTML", "Tailwind CSS", "Custom Design", "Performance Optimized"],
-    results:
-      "Designed and developed agency site with 6-step process, testimonial sections, and strategic CTAs. Built for lead generation and client trust.",
-    demo: "https://nextgentitan.com",
+      "Built a high-ticket consultation funnel and global authority positioning system for a career coaching brand. Turned scattered online presence into a consistent, bookable pipeline of serious clients.",
+    tech: ["Professional Services", "Funnel", "SEO", "Authority Building"],
+    results: "320% increase in bookings · Global authority positioning",
+    demo: "https://www.career-coach-experts.com/",
     github: null,
     type: "client",
   },
   {
     id: 2,
-    year: "2025",
-    name: "MobDoc'r Healthcare Platform",
+    year: "2024",
+    name: "Better Body Massage — via Next-Gen Titan",
     description:
-      "Full-stack healthcare MVP connecting users to HMO plans with three integrated dashboards.",
-    tech: ["NestJS", "React", "PostgreSQL", "TypeScript", "Tailwind"],
-    results:
-      "Built MVP with admin, HMO, and user dashboards. Implemented core product logic and monolithic architecture serving thousands of potential users.",
-    demo: "https://mobdocr.com",
+      "Built a high-converting digital presence for a medical massage clinic in Florida. Designed around one goal: turning site visitors into booked appointments, with seamless booking integration and a clear service layout.",
+    tech: ["Healthcare", "Lead Generation", "Booking Flow"],
+    results: "200% increase in leads · Seamless booking integration",
+    demo: "https://betterbodymassage.com/",
     github: null,
     type: "client",
   },
   {
     id: 3,
-    year: "2025",
-    name: "Mountain Crest School Website",
+    year: "2024",
+    name: "The Botox Barn — via Next-Gen Titan",
     description:
-      "Designed and developed full school website with structured content architecture and administrative information system.",
-    tech: ["Next.js", "Tailwind", "CMS Integration"],
-    results:
-      "Created responsive school portal with parent information system. Currently upgrading performance and UX for better accessibility.",
-    demo: "http://mountaincrest.sch.ng",
+      "Premium aesthetic branding and local search dominance for an elite wellness clinic. Built to attract high-intent local clients through strong positioning and precise technical SEO execution.",
+    tech: ["Healthcare", "Local SEO", "Branding"],
+    results: "250% lead growth · Local SEO dominance",
+    demo: "https://www.thebotoxbarn.com/",
     github: null,
     type: "client",
   },
   {
     id: 4,
     year: "2024",
-    name: "Tourism Discovery App",
+    name: "Genova Appartamenti — via Next-Gen Titan",
     description:
-      "Geolocation application helping tourists discover businesses and attractions in new environments.",
-    tech: ["React", "Node.js", "MongoDB", "Map APIs", "Express"],
-    results:
-      "Built responsive mapping interface. Implemented business discovery features. Contributed to team development workflow.",
-    demo: null,
+      "Streamlined direct booking platform for a top-rated vacation rental in Genoa. Designed to cut OTA dependency and move guests from discovery to confirmed booking.",
+    tech: ["Hospitality", "Direct Booking", "Mobile"],
+    results: "Direct booking pipeline · 100% mobile optimised",
+    demo: "https://lalucesugenovaappartamenti.com/",
     github: null,
     type: "client",
   },
   {
     id: 5,
-    year: "2025",
-    name: "Alphoch Health - Clinic System",
+    year: "2024",
+    name: "Jake's Tree & Turf — via Next-Gen Titan",
     description:
-      "Healthcare efficiency platform with online booking, SMS reminders, and patient portal.",
-    tech: ["Next.js", "Node.js", "PostgreSQL", "Tailwind"],
-    results:
-      "Built functional clinic management system with booking flows and automated reminders. Currently operational.",
-    demo: "https://health.alphoch.com",
+      "Comprehensive digital presence and local SEO strategy for a specialized landscaping and tree service in Maryland. Showcased 15+ years of expertise.",
+    tech: ["Local Business", "SEO", "Lead Generation"],
+    results: "15+ years of expertise showcased · 4 core service pillars",
+    demo: "https://www.jakestreeandturf.com",
     github: null,
-    type: "personal",
+    type: "client",
   },
   {
     id: 6,
-    year: "2025",
-    name: "ClinicFlow Pro Demo",
+    year: "2024 — Present",
+    name: "MobDoc'r Healthcare Platform",
     description:
-      "Interactive demo application showcasing clinic management capabilities.",
-    tech: ["React", "Node.js", "Express", "MongoDB"],
-    results:
-      "Built demonstration tool for appointment scheduling, patient management, and clinic workflow automation.",
-    demo: "https://clinicflow-pro.alphoch.com",
+      "Full-stack MVP connecting Nigerians to HMO health insurance plans through a streamlined 3-step enrollment flow. Built three integrated dashboards on a scalable architecture.",
+    tech: ["SaaS", "Healthcare", "Full-Stack"],
+    results: "3-step enrollment flow · National scale architecture",
+    demo: "https://mobdocr-two.vercel.app",
     github: null,
-    type: "personal",
+    type: "client",
   },
   {
     id: 7,
-    year: "2024-2025",
-    name: "KOORDI - Event Platform",
+    year: "2025",
+    name: "ClinicFlow Pro",
     description:
-      "Event planning platform connecting planners with vendors. Currently in development.",
-    tech: ["Next.js", "Node.js", "PostgreSQL", "Tailwind", "Prisma"],
-    results:
-      "Conducted user research with event vendors. Built waitlist platform with mobile responsiveness.",
-    demo: null,
+      "Specialized clinic management platform built to reduce admin workload and improve patient experience. Includes online booking, SMS reminders, patient portal, and automated workflow logic.",
+    tech: ["SaaS", "Healthcare", "Automation"],
+    results: "45% efficiency gain · Fully automated workflows",
+    demo: "https://clinicflow-pro.alphoch.com",
     github: null,
-    type: "personal",
+    type: "client",
+  },
+  {
+    id: 8,
+    year: "2025",
+    name: "FGT Events",
+    description:
+      "High-performance ticketing and event management platform engineered to handle massive simultaneous traffic without breaking. Built for scale from the ground up.",
+    tech: ["SaaS", "Events", "High Concurrency"],
+    results: "50K+ tickets sold · High traffic ready",
+    demo: "https://fgt.koordi.net",
+    github: null,
+    type: "client",
+  },
+  {
+    id: 9,
+    year: "2025",
+    name: "Mountain Crest School",
+    description:
+      "Designed and built a complete school website with structured content architecture and an administrative information system — built as a foundation ready to grow into a full student portal.",
+    tech: ["Education", "Web Development", "CMS"],
+    results: "Scalable architecture · CMS integrated",
+    demo: "http://mountaincrest.sch.ng",
+    github: null,
+    type: "client",
   },
 ];
 
@@ -338,11 +355,10 @@ export default function Home() {
           <button
             key={section.id}
             onClick={() => scrollToSection(section.id)}
-            className={`px-3 py-1.5 text-xs rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background ${
-              activeSection === section.id
-                ? "bg-foreground text-background font-medium"
-                : "text-muted-foreground hover:text-foreground"
-            }`}
+            className={`px-3 py-1.5 text-xs rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background ${activeSection === section.id
+              ? "bg-foreground text-background font-medium"
+              : "text-muted-foreground hover:text-foreground"
+              }`}
             aria-label={`Navigate to ${section.label}`}
           >
             {section.label}
@@ -368,11 +384,10 @@ export default function Home() {
             <button
               key={section.id}
               onClick={() => scrollToSection(section.id)}
-              className={`w-1.5 md:w-2 h-6 md:h-8 rounded-full transition-all duration-500 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background ${
-                activeSection === section.id
-                  ? "bg-foreground"
-                  : "bg-muted-foreground/30 hover:bg-muted-foreground/60"
-              }`}
+              className={`w-1.5 md:w-2 h-6 md:h-8 rounded-full transition-all duration-500 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background ${activeSection === section.id
+                ? "bg-foreground"
+                : "bg-muted-foreground/30 hover:bg-muted-foreground/60"
+                }`}
               aria-label={`Navigate to ${section.label}`}
               aria-current={activeSection === section.id ? "true" : "false"}
             />
@@ -418,17 +433,16 @@ export default function Home() {
                   Chibuike Okpala
                   <br />
                   <span className="text-muted-foreground text-xl sm:text-2xl md:text-3xl lg:text-4xl">
-                    I Build Fast, Scalable Web Products for Startups & Service
-                    Businesses
+                    Outcomes First. Everything Else Follows.
                   </span>
                 </h1>
               </div>
 
               <div className="space-y-4 sm:space-y-6 max-w-lg">
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                  Full-stack developer available for contract and freelance
-                  projects. Focused on clean execution, real usability, and
-                  on-time delivery.
+                  Full-stack builder and technical problem-solver. Available for
+                  contract and freelance projects. Focused on real outcomes,
+                  clean execution, and measurable results.
                 </p>
 
                 <div className="flex items-center gap-4">
@@ -449,7 +463,7 @@ export default function Home() {
               <div className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 pt-6 sm:pt-12 border-t border-border/30">
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl font-light text-foreground">
-                    7+
+                    10+
                   </div>
                   <div className="text-xs sm:text-sm text-muted-foreground mt-1">
                     Projects delivered
@@ -553,21 +567,25 @@ export default function Home() {
               {[
                 {
                   step: "01",
-                  title: "Understand",
-                  desc: "Your business goal & user needs",
+                  title: "Diagnose",
+                  desc: "I study your situation first — your goals, your gaps, and what's actually holding things back.",
                 },
-                { step: "02", title: "Plan", desc: "Clear scope & timeline" },
+                {
+                  step: "02",
+                  title: "Define",
+                  desc: "We agree on the exact outcome and scope before anything gets built.",
+                },
                 {
                   step: "03",
                   title: "Build",
-                  desc: "Functional MVP or full product",
+                  desc: "Clean, focused execution. No unnecessary complexity, no scope creep.",
                 },
                 {
                   step: "04",
-                  title: "Iterate",
-                  desc: "Feedback & refinements",
+                  title: "Refine",
+                  desc: "Feedback loop until it works exactly right — not just technically, but for your business.",
                 },
-                { step: "05", title: "Deliver", desc: "Launch & handover" },
+                { step: "05", title: "Deliver", desc: "You get a working result with measurable impact, not just a finished file." },
               ].map((item) => (
                 <div
                   key={item.step}
@@ -651,11 +669,10 @@ export default function Home() {
               {PROJECTS.filter((p) => p.type === "client").map((project) => (
                 <div
                   key={project.id}
-                  className={`group py-4 sm:py-6 border-b transition-colors duration-500 ${
-                    expandedProject === project.id
-                      ? "border-foreground/30"
-                      : "border-border/50 hover:border-border"
-                  }`}
+                  className={`group py-4 sm:py-6 border-b transition-colors duration-500 ${expandedProject === project.id
+                    ? "border-foreground/30"
+                    : "border-border/50 hover:border-border"
+                    }`}
                 >
                   <div
                     className="flex flex-col lg:grid lg:grid-cols-12 gap-3 sm:gap-4 cursor-pointer"
@@ -735,101 +752,6 @@ export default function Home() {
               ))}
             </div>
 
-            {/* Personal Projects - Brief */}
-            <div className="pt-8 sm:pt-12">
-              <h3 className="text-xl sm:text-2xl font-light mb-4">
-                Personal Projects
-              </h3>
-              <div className="space-y-3">
-                {PROJECTS.filter((p) => p.type === "personal").map(
-                  (project) => (
-                    <div
-                      key={project.id}
-                      className={`group py-4 sm:py-6 border-b transition-colors duration-500 ${
-                        expandedProject === project.id
-                          ? "border-foreground/30"
-                          : "border-border/50 hover:border-border"
-                      }`}
-                    >
-                      <div
-                        className="flex flex-col lg:grid lg:grid-cols-12 gap-3 sm:gap-4 cursor-pointer"
-                        onClick={() => toggleProject(project.id)}
-                      >
-                        <div className="lg:col-span-2">
-                          <div className="text-base sm:text-lg md:text-xl font-light text-muted-foreground">
-                            {project.year}
-                          </div>
-                        </div>
-
-                        <div className="lg:col-span-6 space-y-1 sm:space-y-2">
-                          <h3 className="text-base sm:text-lg font-medium">
-                            {project.name}
-                          </h3>
-                          <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                            {project.description}
-                          </p>
-                        </div>
-
-                        <div className="lg:col-span-4 pt-2 sm:pt-0">
-                          <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                            {project.tech.map((tech) => (
-                              <span
-                                key={tech}
-                                className="px-1.5 sm:px-2 py-0.5 sm:py-1 text-xs text-muted-foreground border border-border rounded"
-                              >
-                                {tech}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Links section */}
-                      <div className="mt-3 flex gap-3 sm:gap-4 text-xs sm:text-sm">
-                        {project.demo && (
-                          <a
-                            href={project.demo}
-                            className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-ring rounded group/link"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            <span>Live demo</span>
-                            <svg
-                              className="w-3 h-3 transform group-hover/link:translate-x-0.5 transition-transform"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M17 8l4 4m0 0l-4 4m4-4H3"
-                              />
-                            </svg>
-                          </a>
-                        )}
-                      </div>
-
-                      {/* Expanded content */}
-                      {expandedProject === project.id && (
-                        <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-border/30 space-y-3 sm:space-y-4 animate-fade-in-up">
-                          <div>
-                            <div className="text-xs sm:text-sm text-muted-foreground mb-1 sm:mb-2">
-                              Results
-                            </div>
-                            <p className="text-sm sm:text-base text-foreground">
-                              {project.results}
-                            </p>
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  ),
-                )}
-              </div>
-            </div>
           </div>
         </section>
 
@@ -841,13 +763,15 @@ export default function Home() {
         >
           <div className="space-y-6 sm:space-y-8">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-light">
-              Let's Work Together
+              Have a goal in mind?
             </h2>
 
             <div className="space-y-4 sm:space-y-6">
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                Available for contract and freelance projects. Response time
-                within 24 hours.
+                Tell me what you're trying to achieve — not just what you want
+                built. I'll diagnose the right solution and we'll go from there.
+                <br />
+                Response within 24 hours.
               </p>
 
               <div className="space-y-3 sm:space-y-4">

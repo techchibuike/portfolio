@@ -15,18 +15,17 @@ export default function StructuredData() {
       name: "MobDoc'r",
     },
     description:
-      "Building solutions through development, problem-solving, and product thinking.",
+      "Outcomes First. Everything Else Follows. Full-stack builder and technical problem-solver focused on real results.",
     knowsAbout: [
       "Web Development",
-      "React",
-      "Node.js",
-      "TypeScript",
-      "Problem Solving",
-      "Builder",
-      "Software Engineering",
-      "Founder",
-      "Alphoch",
-      "Koordi",
+      "Full Stack Development",
+      "Product Engineering",
+      "SEO & Performance Optimization",
+      "Technical Problem Solving",
+      "SaaS Architecture",
+      "Healthcare Technology",
+      "Conversion Rate Optimization",
+      "MVP Development",
     ],
   };
 

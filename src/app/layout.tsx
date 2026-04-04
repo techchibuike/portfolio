@@ -28,13 +28,13 @@ export const metadata: Metadata = {
     template: "%s | Chibuike Okpala",
   },
   description:
-    "Building solutions through development, problem-solving, and product thinking.",
+    "Outcomes First. Everything Else Follows. Full-stack builder and technical problem-solver focused on real results.",
 
   // Open Graph
   openGraph: {
     title: "Chibuike Okpala | Developer",
     description:
-      "Building solutions through development, problem-solving, and product thinking.",
+      "Outcomes First. Everything Else Follows. Full-stack builder and technical problem-solver focused on real results.",
     url: "https://techchibuike.netlify.app",
     siteName: "Chibuike Okpala Portfolio",
     locale: "en_US",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Chibuike Okpala | Developer",
     description:
-      "Building solutions through development, problem-solving, and product thinking.",
+      "Outcomes First. Everything Else Follows. Full-stack builder and technical problem-solver focused on real results.",
     images: [twitterImage],
     creator: "@techChibuike",
   },
