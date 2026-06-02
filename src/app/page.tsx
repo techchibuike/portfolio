@@ -14,71 +14,67 @@ const SECTIONS = [
 
 const EXPERIENCE = [
   {
+    year: "2025 — Present",
+    role: "Founder",
+    company: "Koordi",
+    description:
+      "Building trust infrastructure for event commerce in Nigeria. Designing a coordination layer that replaces informal guesswork with structured accountability between event organizers and vendors. Currently validating with real events in university ecosystems.",
+  },
+  {
     year: "2024 — Present",
+    role: "Technical SEO Specialist",
+    company: "Next-Gen Titan (Digital Agency)",
+    description:
+      "Leading technical SEO audits and performance optimization for client websites across industries. Built a structured audit system that diagnoses indexing issues, crawl efficiency, schema gaps, and on-page SEO health. Delivered detailed, non-technical reports businesses can act on immediately.",
+  },
+  {
+    year: "2024 — Present",
+    role: "Software Engineer & Web Developer",
+    company: "Independent Practice",
+    description:
+      "Building custom WordPress themes, responsive websites, and web applications for institutions and businesses. Focused on clean architecture, performance, and maintainability. This practice funds my work as a founder.",
+  },
+  {
+    year: "2024",
     role: "Full Stack Developer",
     company: "MobDoc'r (Healthcare MVP)",
     description:
-      "Leading development of a healthcare platform connecting users to HMO plans. Built admin, user, and HMO dashboards on a scalable NestJS backend.",
-  },
-  {
-    year: "2024 — Present",
-    role: "Technical Builder & SEO Specialist",
-    company: "Next-Gen Titan (Digital Agency)",
-    description:
-      "Building and shipping client projects across industries — from high-converting service websites to SaaS platforms. Focused on performance and SEO.",
-  },
-  {
-    year: "Feb 2025 — Present",
-    role: "Product Engineer",
-    company: "Alphoch (Projects Lab)",
-    description:
-      "Developing web applications and MVPs to validate product ideas. Currently building healthcare efficiency tools and event platforms.",
-  },
-  {
-    year: "March 2025 — 2025",
-    role: "Full Stack Developer",
-    company: "Mountain Crest School",
-    description:
-      "Designed a complete school website and administrative information system — built to scale into a full student portal.",
-  },
-  {
-    year: "Aug 2024 — Feb 2025",
-    role: "Frontend Engineer",
-    company: "Dafe Software",
-    description:
-      "Built a geolocation-based tourism application with responsive UI and interactive mapping.",
+      "Developed a healthcare platform connecting users to HMO plans. Built admin, user, and HMO dashboards on a scalable NestJS backend. Product was in active development; not publicly launched.",
   },
 ];
 
 const WORK_DOORS = [
   {
-    title: "Turn Interest Into Action",
-    description: "For professionals getting online attention but struggling to convert it into consistent clients.",
+    title: "Technical SEO & Site Performance",
+    description: "For businesses with websites that aren't showing up in search, loading slowly, or losing traffic without explanation.",
     services: [
-      "Landing pages focused on results",
-      "Lead qualification flows",
-      "Streamlined booking",
-      "Performance & SEO",
+      "Technical SEO audits",
+      "Index cleanup & recovery",
+      "Page speed optimization",
+      "Schema markup",
+      "Google Search Console fixes",
     ],
   },
   {
-    title: "Build Your Product Right",
-    description: "For startups needing a working MVP or full-stack application built to scale from day one.",
+    title: "Websites That Convert",
+    description: "For professionals and businesses needing a website that's fast, visible, and built to turn visitors into clients.",
     services: [
-      "Full-stack web apps",
-      "Admin & Dashboard systems",
-      "API & Database design",
-      "Deployment & DevOps",
+      "Custom WordPress development",
+      "Responsive design",
+      "Performance optimization",
+      "Local SEO foundations",
+      "Wix site optimization",
     ],
   },
   {
-    title: "Fix What's Broken",
-    description: "For businesses with an existing system that isn't performing — slow, unclear, or not converting.",
+    title: "Systems & Coordination Design",
+    description: "For founders and teams building platforms where trust, accountability, and coordination are the core problem — not just code.",
     services: [
-      "Performance & Load time",
-      "Conversion Optimization",
-      "Search visibility (SEO)",
-      "Mobile UX fixes",
+      "Trust infrastructure",
+      "Marketplace design thinking",
+      "Coordination systems",
+      "Incentive design",
+      "Early-stage product strategy",
     ],
   },
 ];
@@ -86,111 +82,75 @@ const WORK_DOORS = [
 const PROJECTS = [
   {
     id: 1,
-    year: "2024",
-    name: "Career Coach Experts",
+    year: "2025",
+    name: "Koordi — Trust Layer for Event Commerce",
     description:
-      "Built a consultation funnel and global authority positioning system for a career coaching brand.",
-    tech: ["Funnel", "SEO", "Authority"],
-    results: "320% increase in bookings",
-    demo: "https://www.career-coach-experts.com/",
+      "Building the infrastructure that makes event vendor transactions accountable. Escrow-style payments, verified vendors, guaranteed delivery. Starting in Nigerian university ecosystems.",
+    tech: ["Trust Systems", "Coordination", "Marketplace"],
+    results: "Validating with real events. Active development.",
+    demo: "https://www.koordi.net",
     github: null,
-    type: "client",
+    type: "product",
   },
   {
     id: 2,
     year: "2024",
-    name: "Better Body Massage",
+    name: "Mountain Crest School Website",
     description:
-      "High-converting digital presence built to turn site visitors into booked appointments.",
-    tech: ["Healthcare", "Leads", "Booking"],
-    results: "200% increase in leads",
-    demo: "https://betterbodymassage.com/",
+      "Custom WordPress theme built from scratch for a school website. Redesigned existing page with clean responsive layout and improved information architecture.",
+    tech: ["WordPress", "Education", "Responsive"],
+    results: "Live at mountaincrest.sch.ng",
+    demo: "https://mountaincrest.sch.ng/",
     github: null,
     type: "client",
   },
   {
     id: 3,
     year: "2024",
-    name: "The Botox Barn",
+    name: "Embatcon Event & Registration Website",
     description:
-      "Premium aesthetic branding and local search dominance for an elite wellness clinic.",
-    tech: ["Healthcare", "Local SEO", "Branding"],
-    results: "250% lead growth",
-    demo: "https://www.thebotoxbarn.com/",
+      "Custom WordPress theme for a major event website with registration functionality. Full development from design to deployment.",
+    tech: ["WordPress", "Events", "Registration"],
+    results: "Live at batteryemergingmarkets.org",
+    demo: "https://batteryemergingmarkets.org/",
     github: null,
     type: "client",
   },
   {
     id: 4,
-    year: "2024",
-    name: "Genova Appartamenti",
+    year: "2025",
+    name: "Technical SEO Audits — 9 Businesses",
     description:
-      "Direct booking platform designed to cut OTA dependency and streamline guest bookings.",
-    tech: ["Hospitality", "Booking", "Mobile"],
-    results: "Direct booking pipeline · 100% Mobile",
-    demo: "https://lalucesugenovaappartamenti.com/",
+      "Built a structured audit system and applied it across nine Wix websites spanning plumbing, home renovation, e-commerce, aviation consulting, real estate, and healthcare. Each audit delivered prioritized, plain-language action plans.",
+    tech: ["Technical SEO", "Wix", "Audit System"],
+    results: "Actionable fixes delivered for all 9 sites",
+    demo: null,
     github: null,
     type: "client",
   },
   {
     id: 5,
     year: "2024",
-    name: "Jake's Tree & Turf",
+    name: "Ace Fuels Business Page",
     description:
-      "Digital presence and local SEO strategy for a landscape and tree service in Maryland.",
-    tech: ["SEO", "Lead Generation"],
-    results: "15+ years expertise showcased",
-    demo: "https://www.jakestreeandturf.com",
+      "Clean business landing page with fast load time and focused presentation.",
+    tech: ["Web Dev", "Performance", "Responsive"],
+    results: "Live at acefuels-futo.org",
+    demo: "https://acefuels-futo.org/",
     github: null,
     type: "client",
   },
   {
     id: 6,
-    year: "2024 — Present",
-    name: "MobDoc'r Health",
+    year: "2024",
+    name: "MobDoc'r Healthcare Platform",
     description:
-      "Full-stack MVP connecting Nigerians to HMO plans through a streamlined enrollment flow.",
-    tech: ["SaaS", "Healthcare", "Full-Stack"],
-    results: "3-step enrollment flow",
-    demo: "https://mobdocr-two.vercel.app",
+      "Full-stack MVP connecting users to HMO plans. Built dashboards and enrollment flows. Product in development, not publicly launched.",
+    tech: ["Full-Stack", "Healthcare", "SaaS"],
+    results: "Functional prototype built",
+    demo: "https://mobdocr-two.vercel.app/",
     github: null,
-    type: "client",
-  },
-  {
-    id: 7,
-    year: "2025",
-    name: "ClinicFlow Pro",
-    description:
-      "Clinic management platform with online booking, SMS reminders, and patient portal.",
-    tech: ["SaaS", "Automation"],
-    results: "45% efficiency gain",
-    demo: "https://clinicflow-pro.alphoch.com",
-    github: null,
-    type: "client",
-  },
-  {
-    id: 8,
-    year: "2025",
-    name: "FGT Events",
-    description:
-      "High-performance ticketing platform engineered to handle massive simultaneous traffic.",
-    tech: ["SaaS", "Events", "High Concurrency"],
-    results: "50K+ tickets sold",
-    demo: "https://fgt.koordi.net",
-    github: null,
-    type: "client",
-  },
-  {
-    id: 9,
-    year: "2025",
-    name: "Mountain Crest School",
-    description:
-      "Complete school website with structured architecture and administrative information system.",
-    tech: ["Education", "CMS"],
-    results: "Scalable arquitecture",
-    demo: "http://mountaincrest.sch.ng",
-    github: null,
-    type: "client",
+    type: "product",
   },
 ];
 
@@ -361,20 +321,18 @@ export default function Home() {
         {/* Backdrop */}
         <div
           onClick={() => setIsMenuOpen(false)}
-          className={`fixed inset-0 bg-background/20 backdrop-blur-sm z-[50] lg:hidden transition-all duration-500 ${
-            isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-          }`}
+          className={`fixed inset-0 bg-background/20 backdrop-blur-sm z-[50] lg:hidden transition-all duration-500 ${isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+            }`}
         />
 
         {/* Half-height Bottom Sheet */}
         <div
           id="mobile-menu"
-          className={`fixed bottom-0 left-0 right-0 z-[55] lg:hidden bg-background/95 backdrop-blur-2xl border-t border-border/50 rounded-t-[2.5rem] p-8 shadow-2xl transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] ${
-            isMenuOpen ? "translate-y-0" : "translate-y-full"
-          } max-h-[70vh] overflow-y-auto`}
+          className={`fixed bottom-0 left-0 right-0 z-[55] lg:hidden bg-background/95 backdrop-blur-2xl border-t border-border/50 rounded-t-[2.5rem] p-8 shadow-2xl transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] ${isMenuOpen ? "translate-y-0" : "translate-y-full"
+            } max-h-[70vh] overflow-y-auto`}
         >
           <div className="w-12 h-1.5 bg-muted-foreground/20 rounded-full mx-auto mb-8" />
-          
+
           <div className="space-y-12">
             {/* Sections */}
             <div className="grid grid-cols-2 gap-4">
@@ -385,11 +343,10 @@ export default function Home() {
                     scrollToSection(section.id);
                     setIsMenuOpen(false);
                   }}
-                  className={`px-4 py-4 rounded-2xl text-sm font-medium transition-all duration-300 flex items-center justify-between group ${
-                    activeSection === section.id
-                      ? "bg-foreground text-background"
-                      : "bg-muted/30 text-muted-foreground hover:bg-muted/50"
-                  }`}
+                  className={`px-4 py-4 rounded-2xl text-sm font-medium transition-all duration-300 flex items-center justify-between group ${activeSection === section.id
+                    ? "bg-foreground text-background"
+                    : "bg-muted/30 text-muted-foreground hover:bg-muted/50"
+                    }`}
                 >
                   <span>{section.label}</span>
                   <div className={`w-1 h-1 rounded-full bg-current transition-transform duration-500 ${activeSection === section.id ? "scale-150" : "scale-0"}`} />
@@ -492,20 +449,20 @@ export default function Home() {
             <div className="space-y-4 sm:space-y-6">
               <div className="space-y-2 sm:space-y-3">
                 <div className="text-xs sm:text-sm text-muted-foreground font-mono tracking-wider">
-                  FULL-STACK ENGINEER / {new Date().getFullYear()}
+                  SYSTEMS & TRUST / {new Date().getFullYear()}
                 </div>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight">
                   Chibuike Okpala
                   <br />
                   <span className="text-muted-foreground text-xl sm:text-2xl md:text-3xl lg:text-4xl">
-                    Outcomes First. Everything Else Follows.
+                    Building trust infrastructure for broken markets.
                   </span>
                 </h1>
               </div>
 
               <div className="space-y-4 sm:space-y-6 max-w-lg">
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                  Full-stack builder focused on technical problem-solving and high-impact business results.
+                  Systems-oriented founder and software engineer. I build trust infrastructure, diagnose coordination failures, and ship products that make markets work better.
                 </p>
 
                 <div className="flex items-center gap-4">
@@ -529,23 +486,23 @@ export default function Home() {
                     10+
                   </div>
                   <div className="text-xs sm:text-sm text-muted-foreground mt-1">
-                    Projects delivered
+                    Sites built & audited
                   </div>
                 </div>
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl font-light text-foreground">
-                    40-60%
+                    9
                   </div>
                   <div className="text-xs sm:text-sm text-muted-foreground mt-1">
-                    Avg. performance gain
+                    Technical SEO audits
                   </div>
                 </div>
                 <div className="text-center">
                   <div className="text-xl sm:text-2xl font-light text-foreground">
-                    100%
+                    Koordi
                   </div>
                   <div className="text-xs sm:text-sm text-muted-foreground mt-1">
-                    Client satisfaction
+                    Trust infrastructure live
                   </div>
                 </div>
               </div>
@@ -630,28 +587,28 @@ export default function Home() {
               {[
                 {
                   step: "01",
-                  title: "Diagnose",
-                  desc: "Studying your situation first to identify real gaps.",
+                  title: "Understand",
+                  desc: "What's really broken beneath the surface?",
                 },
                 {
                   step: "02",
-                  title: "Define",
-                  desc: "Agreeing on the exact outcome before building.",
+                  title: "Diagnose",
+                  desc: "Technical audit to confirm the root cause.",
                 },
                 {
                   step: "03",
-                  title: "Build",
-                  desc: "Clean execution without unnecessary complexity.",
+                  title: "Structure",
+                  desc: "Design the fix — not just code, but the system.",
                 },
                 {
                   step: "04",
-                  title: "Refine",
-                  desc: "Feedback loop until it works for your business.",
+                  title: "Build",
+                  desc: "Clean execution. No unnecessary complexity.",
                 },
                 {
                   step: "05",
-                  title: "Deliver",
-                  desc: "Result with measurable impact.",
+                  title: "Transfer",
+                  desc: "You get the result and the understanding.",
                 },
               ].map((item) => (
                 <div
@@ -829,16 +786,17 @@ export default function Home() {
           className="py-12 sm:py-20 md:py-32 animate-fade-in-up"
         >
           <div className="space-y-6 sm:space-y-8">
+
+
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-light">
-              Have a goal in mind?
+              Let's work together
             </h2>
+
+
 
             <div className="space-y-4 sm:space-y-6">
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                Tell me what you're trying to achieve — not just what you want
-                built. I'll diagnose the right solution and we'll go from there.
-                <br />
-                Response within 24 hours.
+                Whether you need a technical SEO audit, a website that actually performs, or you're thinking about trust and coordination problems in your market — reach out. I respond within 24 hours.
               </p>
 
               <div className="space-y-3 sm:space-y-4">
