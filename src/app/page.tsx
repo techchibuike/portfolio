@@ -14,32 +14,39 @@ const SECTIONS = [
 
 const EXPERIENCE = [
   {
-    year: "2025 — Present",
+    year: "May 2026 — Present",
     role: "Founder",
     company: "Koordi",
     description:
-      "Building trust infrastructure for event commerce in Nigeria. Designing a coordination layer that replaces informal guesswork with structured accountability between event organizers and vendors. Currently validating with real events in university ecosystems.",
+      "Building trust infrastructure for event commerce in Nigeria. Designing a trust layer that replaces informal guesswork with structured accountability between event organizers and vendors. Focused on escrow-style payments, vendor verification, and guaranteed service delivery. Currently validating with real events in university ecosystems.",
   },
   {
-    year: "2024 — Present",
-    role: "Technical SEO Specialist",
-    company: "Next-Gen Titan (Digital Agency)",
+    year: "Dec 2025 — Present",
+    role: "Software Engineer & Technical SEO Specialist",
+    company: "NextGen Titan Digital Solution",
     description:
-      "Leading technical SEO audits and performance optimization for client websites across industries. Built a structured audit system that diagnoses indexing issues, crawl efficiency, schema gaps, and on-page SEO health. Delivered detailed, non-technical reports businesses can act on immediately.",
+      "Providing web development and technical SEO services to businesses that need visibility, performance, and customer acquisition. Building and optimizing websites for speed, structure, and search. Managing independent client relationships, project timelines, and deliverables. This practice funds my work as a founder.",
   },
   {
-    year: "2024 — Present",
-    role: "Software Engineer & Web Developer",
-    company: "Independent Practice",
+    year: "Apr 2024 — Present",
+    role: "Project Lead",
+    company: "Alphoch",
     description:
-      "Building custom WordPress themes, responsive websites, and web applications for institutions and businesses. Focused on clean architecture, performance, and maintainability. This practice funds my work as a founder.",
+      "A long-term initiative exploring and building technology solutions around real-world operational problems. Built early-stage tools in healthcare operations and workflow efficiency. Current focus shifting toward the event space — planning, coordination, and execution systems. Combining engineering, systems thinking, and real-world feedback.",
   },
   {
-    year: "2024",
+    year: "Jul 2025 — Feb 2026",
     role: "Full Stack Developer",
-    company: "MobDoc'r (Healthcare MVP)",
+    company: "MobDoc'r",
     description:
-      "Developed a healthcare platform connecting users to HMO plans. Built admin, user, and HMO dashboards on a scalable NestJS backend. Product was in active development; not publicly launched.",
+      "Built healthcare platforms handling 10,000+ concurrent users. Developed three-sided marketplaces for users, providers, and admins. Optimized mobile load times from 5.2s to 1.2s — a 77% improvement. Increased mobile conversions by 60% through technical optimizations. Led product development from concept to deployment.",
+  },
+  {
+    year: "Jul 2024 — Dec 2024",
+    role: "Frontend Developer",
+    company: "Dafe Software",
+    description:
+      "Built responsive UI components and contributed to frontend architecture during a 6-month internship. Worked with the development team on client-facing applications.",
   },
 ];
 
@@ -82,22 +89,46 @@ const WORK_DOORS = [
 const PROJECTS = [
   {
     id: 1,
-    year: "2025",
-    name: "Koordi — Trust Layer for Event Commerce",
+    year: "2026",
+    name: "Koordi — Trust Infrastructure",
     description:
-      "Building the infrastructure that makes event vendor transactions accountable. Escrow-style payments, verified vendors, guaranteed delivery. Starting in Nigerian university ecosystems.",
+      "Building the trust layer for event commerce in Nigeria. Escrow payments, vendor verification, guaranteed delivery. Replacing informal guesswork with structured accountability.",
     tech: ["Trust Systems", "Coordination", "Marketplace"],
-    results: "Validating with real events. Active development.",
+    results: "Validating with real events in university ecosystems",
     demo: "https://www.koordi.net",
     github: null,
     type: "product",
   },
   {
     id: 2,
-    year: "2024",
+    year: "2025",
+    name: "Technical SEO Audits — 9 Sites",
+    description:
+      "Built a structured audit system and applied it across nine Wix websites. Diagnosed indexing issues, schema gaps, crawl inefficiencies, and on-page SEO problems. Delivered prioritized action plans for each client.",
+    tech: ["Technical SEO", "Wix", "Audit System"],
+    results: "Actionable, non-technical reports delivered for all 9 businesses",
+    demo: null,
+    github: null,
+    type: "client",
+  },
+  {
+    id: 3,
+    year: "2025",
+    name: "MobDoc'r Healthcare Platform",
+    description:
+      "Full-stack marketplace connecting users to HMO plans. Built for 10,000+ concurrent users. Reduced mobile load times by 77% and increased conversions by 60%.",
+    tech: ["Full-Stack", "Healthcare", "Marketplace"],
+    results: "10K+ concurrent users supported. 77% faster load times.",
+    demo: "https://mobdocr-two.vercel.app/",
+    github: null,
+    type: "product",
+  },
+  {
+    id: 4,
+    year: "2025",
     name: "Mountain Crest School Website",
     description:
-      "Custom WordPress theme built from scratch for a school website. Redesigned existing page with clean responsive layout and improved information architecture.",
+      "Custom WordPress theme built from scratch. Redesigned existing school website with clean responsive layout and structured information architecture.",
     tech: ["WordPress", "Education", "Responsive"],
     results: "Live at mountaincrest.sch.ng",
     demo: "https://mountaincrest.sch.ng/",
@@ -105,9 +136,9 @@ const PROJECTS = [
     type: "client",
   },
   {
-    id: 3,
-    year: "2024",
-    name: "Embatcon Event & Registration Website",
+    id: 5,
+    year: "2025",
+    name: "Embatcon Event & Registration Site",
     description:
       "Custom WordPress theme for a major event website with registration functionality. Full development from design to deployment.",
     tech: ["WordPress", "Events", "Registration"],
@@ -117,40 +148,16 @@ const PROJECTS = [
     type: "client",
   },
   {
-    id: 4,
-    year: "2025",
-    name: "Technical SEO Audits — 9 Businesses",
-    description:
-      "Built a structured audit system and applied it across nine Wix websites spanning plumbing, home renovation, e-commerce, aviation consulting, real estate, and healthcare. Each audit delivered prioritized, plain-language action plans.",
-    tech: ["Technical SEO", "Wix", "Audit System"],
-    results: "Actionable fixes delivered for all 9 sites",
-    demo: null,
-    github: null,
-    type: "client",
-  },
-  {
-    id: 5,
+    id: 6,
     year: "2024",
     name: "Ace Fuels Business Page",
     description:
-      "Clean business landing page with fast load time and focused presentation.",
+      "Clean business landing page focused on speed and clear presentation. Drag-and-drop development with performance optimization.",
     tech: ["Web Dev", "Performance", "Responsive"],
     results: "Live at acefuels-futo.org",
     demo: "https://acefuels-futo.org/",
     github: null,
     type: "client",
-  },
-  {
-    id: 6,
-    year: "2024",
-    name: "MobDoc'r Healthcare Platform",
-    description:
-      "Full-stack MVP connecting users to HMO plans. Built dashboards and enrollment flows. Product in development, not publicly launched.",
-    tech: ["Full-Stack", "Healthcare", "SaaS"],
-    results: "Functional prototype built",
-    demo: "https://mobdocr-two.vercel.app/",
-    github: null,
-    type: "product",
   },
 ];
 
@@ -449,7 +456,7 @@ export default function Home() {
             <div className="space-y-4 sm:space-y-6">
               <div className="space-y-2 sm:space-y-3">
                 <div className="text-xs sm:text-sm text-muted-foreground font-mono tracking-wider">
-                  SYSTEMS & TRUST / {new Date().getFullYear()}
+                  FOUNDER & SYSTEMS THINKER / {new Date().getFullYear()}
                 </div>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-tight">
                   Chibuike Okpala
@@ -462,7 +469,7 @@ export default function Home() {
 
               <div className="space-y-4 sm:space-y-6 max-w-lg">
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                  Systems-oriented founder and software engineer. I build trust infrastructure, diagnose coordination failures, and ship products that make markets work better.
+                  Founder of Koordi. Systems thinker and software engineer. I build trust infrastructure, diagnose coordination failures, and ship products that make markets work better.
                 </p>
 
                 <div className="flex items-center gap-4">
