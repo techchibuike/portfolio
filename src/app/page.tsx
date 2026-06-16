@@ -106,7 +106,7 @@ const PROJECTS = [
     description:
       "Built a structured audit system and applied it across nine Wix websites. Diagnosed indexing issues, schema gaps, crawl inefficiencies, and on-page SEO problems. Delivered prioritized action plans for each client.",
     tech: ["Technical SEO", "Wix", "Audit System"],
-    results: "Actionable, non-technical reports delivered for all 9 businesses",
+    results: "Actionable reports delivered for all 9 businesses. Several clients saw improved indexing and search visibility within weeks of implementing recommendations.",
     demo: null,
     github: null,
     type: "client",
@@ -118,7 +118,7 @@ const PROJECTS = [
     description:
       "Full-stack marketplace connecting users to HMO plans. Built for 10,000+ concurrent users. Reduced mobile load times by 77% and increased conversions by 60%.",
     tech: ["Full-Stack", "Healthcare", "Marketplace"],
-    results: "10K+ concurrent users supported. 77% faster load times.",
+    results: "10K+ concurrent users supported. 77% faster load times. 60% increase in mobile conversions.",
     demo: "https://mobdocr-two.vercel.app/",
     github: null,
     type: "product",
@@ -130,7 +130,7 @@ const PROJECTS = [
     description:
       "Custom WordPress theme built from scratch. Redesigned existing school website with clean responsive layout and structured information architecture.",
     tech: ["WordPress", "Education", "Responsive"],
-    results: "Live at mountaincrest.sch.ng",
+    results: "Live at mountaincrest.sch.ng. Responsive redesign with improved mobile performance and clearer parent navigation.",
     demo: "https://mountaincrest.sch.ng/",
     github: null,
     type: "client",
@@ -142,7 +142,7 @@ const PROJECTS = [
     description:
       "Custom WordPress theme for a major event website with registration functionality. Full development from design to deployment.",
     tech: ["WordPress", "Events", "Registration"],
-    results: "Live at batteryemergingmarkets.org",
+    results: "Live at batteryemergingmarkets.org. Custom WordPress theme handling event registration with optimized load times.",
     demo: "https://batteryemergingmarkets.org/",
     github: null,
     type: "client",
@@ -154,7 +154,7 @@ const PROJECTS = [
     description:
       "Clean business landing page focused on speed and clear presentation. Drag-and-drop development with performance optimization.",
     tech: ["Web Dev", "Performance", "Responsive"],
-    results: "Live at acefuels-futo.org",
+    results: "Live at acefuels-futo.org. Clean business landing page optimized for speed and clear service presentation.",
     demo: "https://acefuels-futo.org/",
     github: null,
     type: "client",
@@ -465,6 +465,10 @@ export default function Home() {
                     Building trust infrastructure for broken markets.
                   </span>
                 </h1>
+
+                <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mt-4 border-l-2 border-muted-foreground/30 pl-4">
+                  I help businesses with websites that aren't bringing customers. Technical audits, performance fixes, and clear explanations — no jargon.
+                </p>
               </div>
 
               <div className="space-y-4 sm:space-y-6 max-w-lg">
