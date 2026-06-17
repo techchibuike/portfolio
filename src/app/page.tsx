@@ -101,13 +101,13 @@ const PROJECTS = [
   },
   {
     id: 2,
-    year: "2025",
+    year: "2026",
     name: "Technical SEO Audits — 9 Sites",
     description:
       "Built a structured audit system and applied it across nine Wix websites. Diagnosed indexing issues, schema gaps, crawl inefficiencies, and on-page SEO problems. Delivered prioritized action plans for each client.",
     tech: ["Technical SEO", "Wix", "Audit System"],
     results: "Actionable reports delivered for all 9 businesses. Several clients saw improved indexing and search visibility within weeks of implementing recommendations.",
-    demo: null,
+    demo: "https://www.next-gentitan.com/work",
     github: null,
     type: "client",
   },
@@ -696,7 +696,7 @@ export default function Home() {
                 Client Work
               </h2>
               <div className="text-xs sm:text-sm text-muted-foreground font-mono">
-                2024 — 2025
+                2024 — 2026
               </div>
             </div>
 
