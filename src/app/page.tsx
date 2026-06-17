@@ -812,10 +812,10 @@ export default function Home() {
 
               <div className="space-y-3 sm:space-y-4">
                 <Link
-                  href="mailto:damianokpala111@gmail.com"
+                  href="mailto:damianokpala01@gmail.com"
                   className="group flex items-center gap-2 sm:gap-3 text-sm sm:text-base text-foreground hover:text-muted-foreground transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background rounded w-fit"
                 >
-                  <span>damianokpala111@gmail.com</span>
+                  <span>damianokpala01@gmail.com</span>
                   <svg
                     className="w-4 h-4 sm:w-5 sm:h-5 transform group-hover:translate-x-1 transition-transform duration-300"
                     fill="none"
