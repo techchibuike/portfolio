@@ -24,17 +24,17 @@ const twitterImage = "https://x.com/techChibuike/header_photo";
 
 export const metadata: Metadata = {
   title: {
-    default: "Chibuike Okpala | Developer",
+    default: "Chibuike Okpala | Founder & Systems Investigator",
     template: "%s | Chibuike Okpala",
   },
   description:
-    "Outcomes First. Everything Else Follows. Full-stack builder and technical problem-solver focused on real results.",
+    "I build products that solve meaningful real-world problems. Founder, Systems Investigator, and builder of Koordi.",
 
   // Open Graph
   openGraph: {
-    title: "Chibuike Okpala | Developer",
+    title: "Chibuike Okpala | Founder & Systems Investigator",
     description:
-      "Outcomes First. Everything Else Follows. Full-stack builder and technical problem-solver focused on real results.",
+      "I build products that solve meaningful real-world problems. Founder, Systems Investigator, and builder of Koordi.",
     url: "https://techchibuike.netlify.app",
     siteName: "Chibuike Okpala Portfolio",
     locale: "en_US",
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
   // Twitter
   twitter: {
     card: "summary_large_image",
-    title: "Chibuike Okpala | Developer",
+    title: "Chibuike Okpala | Founder & Systems Investigator",
     description:
-      "Outcomes First. Everything Else Follows. Full-stack builder and technical problem-solver focused on real results.",
+      "I build products that solve meaningful real-world problems. Founder, Systems Investigator, and builder of Koordi.",
     images: [twitterImage],
     creator: "@techChibuike",
   },
@@ -74,13 +74,13 @@ export const metadata: Metadata = {
 
   // Other metadata
   keywords: [
-    "developer",
-    "portfolio",
-    "web development",
-    "React",
-    "Next.js",
-    "Software Engineer",
-    "Builder",
+    "founder",
+    "systems investigator",
+    "product strategy",
+    "Koordi",
+    "builder",
+    "startup",
+    "technology",
   ],
   authors: [{ name: "Chibuike Okpala" }],
   creator: "Chibuike Okpala",
