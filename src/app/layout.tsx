@@ -98,6 +98,8 @@ export const metadata: Metadata = {
   },
 };
 
+import Link from "next/link";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -108,7 +110,35 @@ export default function RootLayout({
       <head>
         <StructuredData />
       </head>
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased min-h-screen flex flex-col`}>
+        <header className="border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+          <div className="container max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
+            <Link href="/" className="font-medium text-foreground hover:text-muted-foreground transition-colors">
+              Chibuike Okpala
+            </Link>
+            <nav className="flex items-center gap-6 text-sm">
+              <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
+              <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">Projects</Link>
+              <Link href="/journal" className="text-muted-foreground hover:text-foreground transition-colors">Journal</Link>
+              <Link href="/research" className="text-muted-foreground hover:text-foreground transition-colors">Research</Link>
+              <Link href="/principles" className="text-muted-foreground hover:text-foreground transition-colors">Principles</Link>
+              <Link href="/now" className="text-muted-foreground hover:text-foreground transition-colors">Now</Link>
+            </nav>
+          </div>
+        </header>
+        <main className="flex-1">
+          {children}
+        </main>
+        <footer className="border-t border-border/40 py-6 mt-20">
+          <div className="container max-w-4xl mx-auto px-4 flex justify-between text-xs text-muted-foreground">
+            <p>© {new Date().getFullYear()} Chibuike Okpala. All rights reserved.</p>
+            <div className="flex gap-4">
+              <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">LinkedIn</Link>
+              <Link href="https://x.com/techChibuike" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">X</Link>
+            </div>
+          </div>
+        </footer>
+      </body>
     </html>
   );
 }
