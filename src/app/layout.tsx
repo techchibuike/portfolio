@@ -99,6 +99,7 @@ export const metadata: Metadata = {
 };
 
 import Link from "next/link";
+import Nav from "@/components/Nav";
 
 export default function RootLayout({
   children,
@@ -111,19 +112,12 @@ export default function RootLayout({
         <StructuredData />
       </head>
       <body className={`${inter.className} antialiased min-h-screen flex flex-col`}>
-        <header className="border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <header className="border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
           <div className="container max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
-            <Link href="/" className="font-medium text-foreground hover:text-muted-foreground transition-colors">
+            <Link href="/" className="font-medium text-foreground hover:text-muted-foreground transition-colors z-50">
               Chibuike Okpala
             </Link>
-            <nav className="flex items-center gap-6 text-sm">
-              <Link href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About</Link>
-              <Link href="/projects" className="text-muted-foreground hover:text-foreground transition-colors">Projects</Link>
-              <Link href="/journal" className="text-muted-foreground hover:text-foreground transition-colors">Journal</Link>
-              <Link href="/research" className="text-muted-foreground hover:text-foreground transition-colors">Research</Link>
-              <Link href="/principles" className="text-muted-foreground hover:text-foreground transition-colors">Principles</Link>
-              <Link href="/now" className="text-muted-foreground hover:text-foreground transition-colors">Now</Link>
-            </nav>
+            <Nav />
           </div>
         </header>
         <main className="flex-1">
