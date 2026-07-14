@@ -7,7 +7,7 @@ import { Metadata } from "next";
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const doc = getMarkdownDocument("research", `${slug}.md`);
-  
+
   if (!doc) {
     return {
       title: "Not Found",
@@ -37,8 +37,8 @@ export default async function ResearchPost({ params }: { params: Promise<{ slug:
 
   return (
     <div className="container max-w-3xl mx-auto px-4 py-20 space-y-12 animate-fade-in-up">
-      <Link href="/research" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-        ← Back to Research
+      <Link href="/research" className="text-sm text-muted-foreground hover:text-foreground transition-colors mb-12 block">
+        &lt; Back to Research
       </Link>
       <header className="space-y-4">
         <h1 className="text-4xl sm:text-5xl font-light tracking-tight">{doc.title}</h1>
