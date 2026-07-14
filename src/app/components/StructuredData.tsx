@@ -3,7 +3,7 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Chibuike Okpala",
-    jobTitle: "Full Stack Developer",
+    jobTitle: "Founder & Analyst",
     url: "https://techchibuike.netlify.app",
     sameAs: [
       "https://github.com/techchibuike",
